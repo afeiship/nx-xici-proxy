@@ -15,7 +15,6 @@ module Nx
       rows = doc.css("#ip_list tr").slice(0, 22)
       data = []
       rows.each_with_index do |row, index|
-        p index, row.text
         if index > 2
           ip = row.css("td:nth-child(2)").text
           port = row.css("td:nth-child(3)").text
