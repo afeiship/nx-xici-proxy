@@ -11,9 +11,20 @@ gem 'nx-xici-proxy', git: 'git@github.com:afeiship/nx-xici-proxy.git',ref:'a6b0a
 
 ## usage
 ```rb
-Nx::XiciProxy::hello
+Nx::XiciProxy::fetch
 
-# hello world
+# result
+[
+    {
+        :ip=>"138.197.74.25", 
+        :port=>"8118"
+    }, 
+    {
+        :ip=>"167.172.17.86", 
+        :port=>"3128"
+    }
+    # ...
+]
 ```
 
 ## build/publish
